@@ -1,10 +1,12 @@
 const express = require('express')
+const blogs = require('./data/data.js')
 const app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 const PORT = process.env.PORT || 3000
 app.get('/', (req, res)=>{
-    res.render('index', {title: 'HOME'})
+
+    res.render('index', {title: 'HOME', blogs})
 })
 
 app.get('/about', (req, res) =>{
