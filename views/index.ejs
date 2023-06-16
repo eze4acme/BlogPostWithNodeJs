@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head') %>
+<%- include('./partials/head.ejs') %>
 <body>
    <%- include('./partials/nav.ejs') %>
+   <div class="container">
     <div class="blogs content">
         <h2>All Blogs  EJS-Lint</h2>
         <% if (blogs.length > 0) { %>
@@ -14,6 +15,7 @@
                 <p>There are no blogs to display...</p>
                 <% } %>
     </div>
+   </div>
     <%- include('./partials/footer.ejs') %>
 </body>
 </html>

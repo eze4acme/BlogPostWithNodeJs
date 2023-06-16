@@ -16,7 +16,7 @@ app.get('/blogs/create', (req, res) =>{
     res.render('create', {title: 'Create A New Blog'})
 })
 app.use((req, res) =>{
-    res.render('404', {title: '404'})
+    res.status(404).render('404', {title: '404'})
 })
 
 app.listen(PORT, console.log(`Eze listen on port ${PORT}`))
