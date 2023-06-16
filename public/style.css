@@ -7,7 +7,6 @@ body {
 .site-title {
   padding-top: 20px;
   padding-left: 10px;
-  /* background-color: purple; */
 }
 .site-title a {
   text-decoration: none;
@@ -39,11 +38,9 @@ nav {
 
 ul {
   padding-left: 0;
-  /* background-color: red; */
   display: flex;
   align-self: flex-end;
   justify-content: end;
-  /* margin-bottom: 5px; */
 }
 ul li {
   list-style: none;
@@ -54,14 +51,12 @@ ul li {
 ul li a {
   text-decoration: none;
   font-weight: 300;
-  /* background-color: yellow; */
   text-transform: uppercase;
   text-shadow: 0 0 0.5px black;
   letter-spacing: 1px;
   color: #574848;
 }
 .content {
-  /* background-color: red; */
   padding: 30px;
   width: 90%;
   max-width: 900px;
@@ -80,7 +75,6 @@ footer {
 }
 .container {
   background-color: #e7e4e4;
-  /* padding: 20px; */
   height: 80vh;
   padding-bottom: 20px;
 }
@@ -115,6 +109,7 @@ textarea {
   outline: none;
   resize: none;
   height: 120px;
+  caret-color: red;
 }
 button {
   padding: 10px 20px;
@@ -127,4 +122,14 @@ button {
   font-weight: bold;
   font-size: 16px;
   align-self: flex-start;
+  transition: background-color ease-in-out;
+  cursor: pointer;
+}
+.not-found {
+  margin-left: 20px;
+  word-spacing: 5px;
+}
+
+button:hover {
+  background-color: #a54343;
 }

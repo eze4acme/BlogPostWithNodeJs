@@ -16,7 +16,7 @@ app.get('/about', (req, res) =>{
 app.get('/blogs/create', (req, res) =>{
     res.render('create', {title: 'Create A New Blog'})
 })
-app.use((req, res) =>{
+app.all('*', (req, res) =>{
     res.status(404).render('404', {title: '404'})
 })
 
