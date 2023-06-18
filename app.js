@@ -1,5 +1,6 @@
 const express = require('express')
 const blogs = require('./data/data.js')
+const morgan = require('morgan')
 const PORT = process.env.PORT || 3000
 const app = express()
 app.use(express.static('public'))
