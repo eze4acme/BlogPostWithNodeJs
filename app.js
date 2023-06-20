@@ -21,5 +21,5 @@ app.all('*', (req, res) =>{
     res.status(404).render('404', {title: '404'})
 })
 
-app.listen(PORT, console.log(`Eze listen on port ${PORT}`))
+app.listen(PORT, console.log(`Eze listening on port ${PORT}`))
 
